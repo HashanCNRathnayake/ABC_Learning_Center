@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ABC Learning Center</title>
+
+    <!-- links -->
+        <!-- links -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  <!-- css stylesheet -->
+  <link href="css\style.css" rel="stylesheet">
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Shantell+Sans&family=Zeyada&display=swap" rel="stylesheet">
+
+
+  <!-- bootstrap js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+ 
+   <!-- jquery ui -->
+   <link href="jquery/jquery-ui.css" rel="stylesheet">
+   <script src="jquery/jquery.js"></script>
+   <script src="jquery/jquery-ui.js"></script>
+</head>
+    <body >
+
+        <!-- Navigation Bar - Start -->
+        <nav class="navbar fixed-top navbar-expand-xl navbar-dark px-2 pt-1 pt-lg-1 " onmouseleave="noblack()" id="nav_bar">
+
+            <div class="container-fluid">
+    
+            <a class="navbar-brand headline ps-lg-4" href="index.html">ABC LC</a>
+    
+            <a class="navbar-toggler " type="button" data-bs-toggle="collapse" 
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon i" onclick="goblack()" id="nav_icon"></span>
+            </a>
+    
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    
+            <div class="mx-auto"></div>
+    
+            <ul class="navbar-nav  me-4 mb-2 mb-lg-0 ">
+    
+            <li class="nav-item hover-underline-animation ">
+            <a class="nav-link " aria-current="page" href="index.html">Home</a>
+            </li>
+    
+            <li class="nav-item hover-underline-animation w-100">
+            <a class="nav-link" href="about.html">About Us</a>
+            </li>
+    
+            <li class="nav-item hover-underline-animation dropdown w-25 w-md-100 ">
+            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" 
+            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Courses
+            </a>
+    
+            <ul class="bg-light dropdown-menu  " aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item " href="courses.html#section_15">Paid</a></li>
+            <li><a class="dropdown-item" href="courses.html#section_14">Free</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="courses.html">All Courses</a></li>
+            </ul>
+            </li>
+    
+            <li class="nav-item hover-underline-animation ">
+            <a class="nav-link" href="contact.html">Contacts</a>
+            </li>
+    
+            <li class="nav-item hover-underline-animation">
+            <a class="nav-link" href="account.html">Account</a>
+            </li>
+    
+    
+            </ul>
+            <div class="d-flex justify-content-lg-end justify-content-start pt-2 me-2 d-none d-md-block">
+            <form class="d-inline-flex">
+            <input class="form-control me-0 mb-2 " type="search" placeholder="Search Course" aria-label="Search">
+            <button class="btn btn-outline-info mb-2" type="submit">Search</button>
+            </form>
+    
+            </div>
+            <div class="d-flex justify-content-lg-start d-none d-md-block">
+            <a type="button" class="btn btn-primary me-1" href="#signin">Log-In</a>
+            <a type="button" class="btn btn-success me-1" href="account.html#reg_form">Sign-Up</a>
+            </div>
+            </div>
+            </div>
+            </nav>
+            <!-- Navigation Bar - End -->
+  
+
+        <main>
+
+            <!-- Section_1 -->
+            <section class="" id="section_1">
+            <!-- Banner Image -->
+            <div class="banner-image-wordsche img-responsive w-100 vh-100 d-flex justify-content-center align-items-center p-5  pt-0 p-lg-0 ">
+                <div class="content text-center cap ">
+                    <h4  class=" black fw-bold display-4 pt-5 mt-5 ">Microsoft Office PowerPoint</h4>
+                    <hr class="p-1 bg-white thick width"/>
+                    <h5  class="fw-bold text-white display-3 my-lg-3 py-3 mt-0"><span class="cap">Sc<u class="text-info  fw-bold">hedule</u></span></h5>
+                    <img src="img/Courses/ppt.jpg" class=" image6 image-responsive  " alt="">
+                    <p class="text-white fw-bold banner_text">
+                       There is a Schedule for this course as admine  provided.
+                    </p>
+                    <!-- buttons -->
+                    <div class="container text-center">
+                        <div class="">
+                            <div class="row row-cols-1 row-cols-lg-4">
+                                <div class="col"></div>
+                                
+                                <div class="col">
+                                    <a type="button" class="btn btn-success me-2 fs-5 fw-bold w-100 mt-2 mb-2" href="#lesson">Enroll Now</a>
+                                </div>
+                
+                                <div class="col">
+                                <a type="button" class="btn btn-danger me-2 fs-5 fw-bold w-100 mt-2 mb-2" href="#table">Schedule</a>
+                                </div>
+                                <div class="col"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!--End buttons -->
+
+
+                    <br><br><br>
+                </div>
+                <!-- end of headers -->
+            </div>
+            </section>
+            <!-- end the Section_1 -->
+
+            <!-- Section_7 -->
+            <!--Floating Section: Social media -->
+            <section class="box " id="section_7">
+                <div class="container ps-0 ms-0">
+    
+                <!-- Facebook -->
+                <div class="">
+    
+                <a
+                data-bs-toggle="tooltip" 
+                data-bs-placement="right" 
+                title="Facebook"
+                class="btn text-white so mt-1 ps-3 pt-2 pe-3  "
+                style="background-color: #3b5998;"
+                href="https://www.facebook.com/hashan.rathnayake.9210?mibextid=ZbWKwL"
+                role="button"
+                ><i class="fab fa-facebook-f"></i></a>
+                </div>
+    
+                <!-- Twitter -->
+                <div class="">
+                <a
+                data-bs-toggle="tooltip" 
+                data-bs-placement="right" 
+                title="Twitter"
+                class="btn text-white btn-floating so mt-1  "
+                style="background-color: #55acee;"
+                href="https://twitter.com/?lang=en"
+                role="button"
+                ><i class="fab fa-twitter"></i
+                ></a>
+                </div>
+    
+                <!-- Google -->
+                <div class="">
+                <a
+                data-bs-toggle="tooltip" 
+                data-bs-placement="right" 
+                title="Google"
+                class="btn text-white btn-floating so mt-1  "
+                style="background-color: #dd4b39;"
+                href="mailto:hashan24360@gmail.com?cc=hashiyapc123@gmail.com&bcc=hashanrathnayake@gmail.com&subject=Suggestions&body=Type the relavant Content"
+                role="button"
+                ><i class="fab fa-google"></i
+                ></a>
+                </div>
+    
+                <!-- Instagram -->
+                <div class="">
+                <a
+                data-bs-toggle="tooltip" 
+                data-bs-placement="right" 
+                title="Instagram"
+                class="btn text-white btn-floating so mt-1  "
+                style="background-color: #ac2bac;"
+                href="https://www.instagram.com/"
+                role="button"
+                ><i class="fab fa-instagram"></i
+                ></a>
+                </div>
+    
+                <!-- Linkedin -->
+                <div class="">
+    
+                <a
+                data-bs-toggle="tooltip" 
+                data-bs-placement="right" 
+                title="Linkedin"
+                class="btn text-white btn-floating so mt-1  "
+                style="background-color: #0082ca;"
+                href="https://www.linkedin.com/"
+                role="button"
+                ><i class="fab fa-linkedin-in"></i
+                ></a>
+                </div>
+    
+                <!-- Github -->
+                <div class="">
+    
+                <a
+                data-bs-toggle="tooltip" 
+                data-bs-placement="right" 
+                title="Github"
+                class="btn text-white btn-floating so mt-1  "
+                style="background-color: #333333;"
+                href="https://github.com/"
+                role="button"
+                ><i class="fab fa-github"></i
+                ></a>
+                </div>
+    
+    
+                </div>
+                </section>
+                <!-- end the section_7 -Floating social media as -->
+    
+  
+                
+
+
+
+             <!-- Section_19 -->
+             <section class=" section-padding padding_sm" id="lesson">
+
+                <div class="row row-col-1 row-cols-lg-3 px-3">
+                    
+                    <div class=" col text-center" >
+                        <iframe width="560" height="315" class="iframe_1 mb-5" src="https://www.youtube.com/embed/videoseries?list=PLoyECfvEFOjaWmJOqB8N2AauEm72wIVex" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        
+                    </div>
+                    <div class="col d-lg-block d-none"></div>
+                    <div class="col fs-4 text-start">
+                        
+                            <p class="text">Duration : Six (6) Months <br>
+                                Lecturer : Ms. Jessica Brown <br>Level : Diploma <br>
+                                Last Update : Jan 2023 <br><span class="text-success">
+                                    Price : Free 
+                                </span><br>
+                                <span class="btn btn-outline-success ">Free</span> 
+            
+                                <!-- Reviews stars -->
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fs-5 ">&nbsp;4.1</span>
+                                <!-- Reviews stars -->
+                            </p>
+
+
+                    </div>
+                </div>
+
+                <!--jquery Tabs -->
+                <div id="tabs" >
+                    <ul>
+                        <li><a href="#tabs-1">Weekly Schedule</a></li>
+                        <li><a href="#tabs-2">Monthly Schedule</a></li>
+                    </ul>
+                    <div id="tabs-1">
+                        <!-- Table  -->
+                        <div class="  text-center my-lg-3  " id="table">
+                            <h5  class=" fw-bold text-dark display-3 my-lg-3 py-3 mt-0 ">
+                                <span class="cap"> W<u class="text-info  fw-bold">eekly</u></span>
+                                
+                                <span class="cap"> Sc<u class="text-info  fw-bold">hedule</u></span></h5>
+                            
+                                <!-- 
+                                    btn-outline-warning
+                                    btn-outline-info
+                                    btn-outline-secondary
+                                    btn-outline-primary
+                                    btn-outline-success
+                                    btn-outline-danger
+                                    
+                                -->
+                                <div class="table-responsive-md">
+                                    <table class="table table-bordered table-striped  table-hover">
+                                        <thead>
+                                        <tr class="table-dark">
+                                            <th class="t_width">Date/Period</th>
+                                            <th>9:00- 10:00</th>
+                                            <th>10:00- 11:00</th>
+                                            <th>11:00- 12:00</th>
+                                            <th>12:00- 13:00</th>
+                                            <th>13:00- 14:00</th>
+                                            <th>14:00- 15:00</th>
+                                        </tr>
+                                        </thead>
+
+                                        <tbody>
+
+                                        <tr>
+                                            <td  class="table-dark pt-3" >Monday</td>
+                                            <td colspan="2" >Morning Flip Class</td>
+                                            <td>Aditional Practice</td>
+                                            <td rowspan="5" class="table-secondary">
+                                                <h2 class="linespace">L<br>U<br>N<br>C<br>H</h2>
+                                            </td>
+                                            <td>Afternoon Flip Class</td>
+                                            <td>E-Learnings (Self Learn)</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="table-dark pt-3">Tuesday</td>
+                                            <td >Morning Flip Class</td>
+                                            <td colspan="2" >Aditional Practice</td>
+                                            
+                                            <td colspan="2" >Afternoon Flip Class</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="table-dark pt-3">Wednesday</td>
+                                            <td >Morning Flip Class</td>
+                                            <td>Aditional Practice</td>
+                                            
+                                            <td>Afternoon Flip Class</td>
+                                            <td colspan="2" >E-Learnings (Self Learn)</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="table-dark pt-3">Thursday</td>
+                                            <td colspan="2" >Morning Flip Class</td>
+                                            <td>E-Learnings (Self Learn)</td>
+
+                                            <td>Aditional Practice</td>
+                                            
+                                            <td>Afternoon Flip Class</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="table-dark pt-3">Friday</td>
+                                            <td>Morning Flip Class</td>
+                                            <td>Aditional Practice</td>
+                                            <td>E-Learnings (Self Learn)</td>
+                                            <td>Afternoon Flip Class</td>
+                                            <td>E-Learnings (Self Learn)</td>
+                                        </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                        </div>
+                        <!--End Table  -->
+                        
+                    </div>
+                    <div id="tabs-2">
+                        <!-- Table  -->
+                        <div class="  text-center my-lg-3  ">
+                            <h5  class=" fw-bold text-dark display-3 my-lg-3 py-3 mt-0 pb-5 ">
+                                <span class="cap"> M<u class="text-info  fw-bold">onthly</u></span>
+                                
+                                <span class="cap"> Sc<u class="text-info  fw-bold">hedule</u></span></h5>
+                            
+                                <!-- 
+                                    btn-outline-warning
+                                    btn-outline-info
+                                    btn-outline-secondary
+                                    btn-outline-primary
+                                    btn-outline-success
+                                    btn-outline-danger
+                                    
+                                -->
+                                <div class="table-responsive-md fs-4">
+                                    <table class="table table-bordered table-striped  table-hover">
+                                        <thead>
+                                        <tr class="table-dark">
+                                            <th class="t_width">Month/Week</th>
+                                            <th>1st Week</th>
+                                            <th>2nd Week</th>
+                                            <th>3rd Week</th>
+                                            <th>4th Week</th>
+
+                                        </tr>
+                                        </thead>
+            
+                                        <tbody>
+            
+                                        <tr>
+                                            <td  class="table-dark pt-3" >1st Month</td>
+                                            <td>Regular Schedule</td>
+                                            <td>Regular Schedule</td>
+                                            <td>Regular Schedule</td>
+                                            <td>Regular Schedule</td>
+
+                                        </tr>
+            
+                                        <tr>
+                                            <td  class="table-dark pt-3" >2st Month</td>
+                                            <td>Regular Schedule</td>
+                                            <td>Regular Schedule</td>
+                                            <td>Regular Schedule</td>
+                                            <td>Regular Schedule</td>
+
+                                        </tr>
+
+                                        <tr>
+                                            <td  class="table-dark pt-3" >3st Month</td>
+                                            <td>Regular Schedule</td>
+                                            <td>Regular Schedule</td>
+                                            <td>Regular Schedule</td>
+                                            <td class="table-danger so_bo fs-3 fw-bold border border-dark">Vacation<br>Week</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td  class="table-dark pt-3" >4st Month</td>
+                                            <td>Regular Schedule</td>
+                                            <td>Regular Schedule</td>
+                                            <td>Regular Schedule</td>
+                                            <td>Regular Schedule</td>
+
+                                        </tr>
+
+                                        <tr>
+                                            <td  class="table-dark pt-3" >5st Month</td>
+                                            <td>Regular Schedule</td>
+                                            <td>Regular Schedule</td>
+                                            <td>Regular Schedule</td>
+                                            <td class="table-danger so_bo fs-3 fw-bold border border-dark">Vacation<br>Week</td>
+
+                                        </tr>
+
+                                        <tr>
+                                            <td  class="table-dark pt-3" >6st Month</td>
+                                            <td>Regular Schedule</td>
+                                            <td>Regular Schedule</td>
+                                            <td>Regular Schedule</td>
+                                            <td>Regular Schedule</td>
+
+                                        </tr>
+            
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                        </div>
+                        <!--End Table  -->
+                        
+                    </div>
+                    
+                </div>
+                <!--jquery Tabs -->
+
+                
+                <div class="row row-cols-1 row-cols-md-5 pt-5 text-center justify-content-center ">
+                    
+                    <div class="col ">
+                        <a href="https://www.tutorialspoint.com/powerpoint/powerpoint_tutorial.pdf"><img src="img/Courses/doc.jpg" class="image" alt=""></a>
+                        <h3>Documents</h3>
+
+                        <p>
+                            This course provides you many documents that helps to improve your knowledge and easy to learn.
+                        </p>
+                    </div>
+                    <div class="col ">
+                        <a href="#lesson"><img src="img/Courses/video.jpg" class="image" alt=""></a>
+                        <h3>E-Learnings</h3>
+
+                        <p>
+                            Many E-learning and video lessons are also provided for this course to learn fast and easy.
+                        </p>
+                    </div>
+                    <div class="col">
+                        <a href="#"><img src="img/Courses/certi.webp" class="image" alt=""></a>
+                        <h3>Certificate</h3>
+                        <p>
+                            After completion of this course, You will be awarded with a standard valuable certificate.
+                        </p>
+                    </div>
+                    
+
+                </div>
+                
+               <!-- buttons -->
+               <div class="container text-center py-3">
+                <div class="">
+                    <div class="row row-cols-1 row-cols-lg-3">
+                        <div class="col"></div>
+                        <div class="col">
+                        <a type="button" class="btn btn-danger me-2 fs-3 fw-bold w-100 mt-2 mb-2" href="#lesson">Enroll Now</a>
+                        </div>
+                        <div class="col"></div>
+                    </div>
+                </div>
+            </div>
+            <!--End buttons -->
+
+            </section>
+            <!--End Section_19 -->
+            
+
+
+
+
+
+
+            <!-- Secction_6 -->
+            <!-- Section: Social media -->
+            <!-- Sign in form -->
+            <section class="bg-lightblue pb-4" id="section_6">
+                <!-- Section: Social media -->
+                <section class="pt-5 pb-5 mt-3">
+                <div class="container d-flex justify-content-lg-center ">
+                    <div class="container">
+                    <div class="row row-cols-3 row-cols-lg-6">
+                        
+                    <!-- Facebook -->
+                    <div class="col text-center">
+                        <a
+                        class="btn text-white btn-floating so m-3 ps-4 pe-4 fs-1"
+                        style="background-color: #3b5998;"
+                        href="https://www.facebook.com/hashan.rathnayake.9210?mibextid=ZbWKwL"
+                        role="button"
+                        ><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                
+                    <!-- Twitter -->
+                    <div class="col text-center">
+                        <a
+                        class="btn text-white btn-floating so m-3 ps-3 pe-3 fs-1"
+                        style="background-color: #55acee;"
+                        href="https://twitter.com/?lang=en"
+                        role="button"
+                        ><i class="fab fa-twitter"></i
+                        ></a>
+                    </div>
+                
+                    <!-- Google -->
+                    <div class="col text-center">
+                        <a
+                        class="btn text-white btn-floating so m-3 ps-3 pe-3 fs-1"
+                        style="background-color: #dd4b39;"
+                        href="mailto:hashan24360@gmail.com?cc=hashiyapc123@gmail.com&bcc=hashanrathnayake@gmail.com&subject=Suggestions&body=Type the relavant Content"
+                        role="button"
+                        ><i class="fab fa-google"></i
+                    ></a>
+                    </div>
+                
+                    <!-- Instagram -->
+                    <div class="col text-center">
+                        <a
+                        class="btn text-white btn-floating so m-3 ps-3 pe-3 fs-1"
+                        style="background-color: #ac2bac;"
+                        href="https://www.instagram.com/"
+                        role="button"
+                        ><i class="fab fa-instagram"></i
+                    ></a>
+                    </div>
+                
+                    <!-- Linkedin -->
+                    <div class="col text-center">
+                        <a
+                        class="btn text-white btn-floating so m-3 ps-3 pe-3 fs-1"
+                        style="background-color: #0082ca;"
+                        href="https://www.linkedin.com/"
+                        role="button"
+                        ><i class="fab fa-linkedin-in"></i
+                    ></a>
+                    </div>
+
+                    <!-- Github -->
+                    <div class="col text-center">
+                        <a
+                        class="btn text-white btn-floating so m-3 ps-3 pe-3 fs-1"
+                        style="background-color: #333333;"
+                        href="https://github.com/"
+                        role="button"
+                        ><i class="fab fa-github"></i
+                    ></a>
+                    </div>
+                    
+
+                    </div>
+                    </div>
+                </div>
+                </section>
+
+                <!-- Sign in form -->
+                <section class="form-signin text-center" id="signin">
+                <form class="text-center bg-lightblue p-3 pt-1">
+                    <h4 class="p-6">Create An Account</h4>
+                    <img class="m-0 p-0 image-icon mb-4 so" src="img/prof.png" alt="" >
+                    <h1 class="fs-5 mb-5 fw-normal">Please Sign In</h1>
+                
+                    <div class="form-floating so ">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Email address</label>
+                    </div>
+                    <div class="form-floating  so">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword">Password</label>
+                    </div><br>
+                        
+                    <div class="d-flex justify-content-around mb-3 checkbox fs-6">
+                    <div>
+                        <input type="checkbox" value="remember-me"> Remember me
+                    </div>
+                    <div>
+                        <a onclick="alert('\t\t\t\t\t\t\t Hii... HOW ARE YOU !\n\nSORRY THIS OPTION IS CURRENTLY UNAVAILABLE\n\n\t\t\t\t\t\t\t LOVE YOU')" class="nostyle">Forget Your Password?</a>
+                    </div>
+                    </div>
+                    <div class="pb-3 pt-3 ">
+                    <button onclick="alert('\t\t\t\t\t\t\t Hii... HOW ARE YOU !\n\nSORRY THIS OPTION IS CURRENTLY UNAVAILABLE\n\n\t\t\t\t\t\t\t LOVE YOU')" class="w-50 btn btn-primary so  " type="submit">Sign in</button>
+                    </div>
+                    <hr >
+                    <p>or</p>
+
+                    <div>
+                    <div class="d-flex justify-content-around fs-1 ps-5 ms-5 pe-5 me-5 " >
+                        <div class="text-primary so2">
+                            <a onclick="alert('\t\t\t\t\t\t\t Hii... HOW ARE YOU !\n\nSORRY THIS OPTION IS CURRENTLY UNAVAILABLE\n\n\t\t\t\t\t\t\t LOVE YOU')">
+                            <i class="fa-brands fa-square-facebook"></i>
+                        </a></div>
+                        
+                        <div class="text-success so2">
+                            <a onclick="alert('\t\t\t\t\t\t\t Hii... HOW ARE YOU !\n\nSORRY THIS OPTION IS CURRENTLY UNAVAILABLE\n\n\t\t\t\t\t\t\t LOVE YOU')">
+                            <i class="fa-brands fa-google"></i>
+                        </a></div>
+    
+                        <div class="text-info so2">
+                            <a onclick="alert('\t\t\t\t\t\t\t Hii... HOW ARE YOU !\n\nSORRY THIS OPTION IS CURRENTLY UNAVAILABLE\n\n\t\t\t\t\t\t\t LOVE YOU')">
+                            <i class="fa-brands fa-square-twitter"></i>
+                        </a></div>
+                    </div>
+                    <div class="pb-3 pt-3 ">
+                        <a href="account.html#reg_form"  class="w-75 btn btn-success so " type="submit">Crate An Account</a>
+                    </div>
+                    <hr >
+                    <p class="mt-5 mb-3 text-muted">&copy; 2023</p>
+
+                    </div>
+                </form>
+                </section>
+            </section>
+
+
+            <!-- Footer -->
+            <section class="" >
+
+            <footer class=" text-center text-lg-start bg-dark text-muted" id="footer">
+
+
+            <section class="section-padding">
+            <div class="container  text-md-start mt-2">
+            <div class="row mt-1">
+            <div class="col-12 col-lg-3 col-xl-3 mx-auto mb-4 boder-right">
+            <div class="d-inline-flex">
+            <div class="d-none d-lg-block">
+            <span> &nbsp&nbsp&nbsp&nbsp&nbsp;</span>
+            </div>
+            <h6 class="text-center text-lg-start fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i> ABC LEARNING CENTER
+            </h6>
+            </div>
+
+
+            <div class="text-center">
+            <div class="container ">
+            <section class="">
+            <form action="">
+            <div class="row d-flex justify-content-center">
+            <div class="col-auto">
+            <p class="pt-2">
+            <strong>Sign up for our newsletter</strong>
+            </p>
+            </div>
+
+            <div class="col-12 ">
+            <div class="form-outline mb-1">
+            <input type="email" id="form5Example27" class="form-control" />
+            <label class="form-label" for="form5Example27">Email address</label>
+            </div>
+            </div>
+
+            <div class="col-auto">
+            <button type="submit" class="btn btn-primary mb-4">
+            Subscribe
+            </button>
+            </div>
+            </div>
+            </form>
+            </section>
+            </div>
+            </div>
+            </div>
+
+            <div class="col-6 col-lg-3 col-xl-3 ps-lg-5 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">
+            Navigation
+            </h6>
+            <p>
+            <a href="index.html" class="text-reset">Home</a>
+            </p>
+            <p>
+            <a href="about.html" class="text-reset">About Us</a>
+            </p>
+            <p>
+            <a href="courses.html" class="text-reset">Courses</a>
+            </p>
+
+            </div>
+
+            <div class="col-6 col-lg-3 col-xl-3 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">
+            Useful links
+            </h6>
+            <p>
+            <a href="privacypoilicy.html" class="text-reset">Privacy Policy</a>
+            </p>
+            <p>
+            <a href="sitemap.html" class="text-reset">SiteMap</a>
+            </p>
+            <p>
+            <a href="account.html#reg_form" class="text-reset">Sign-Up</a>
+            </p>
+
+            </div>
+
+            <div class="col-12 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <h6 class="text-uppercase fw-bold mb-4"><a href="contact.html">Contacts</a></h6>
+            <p><i class="fas fa-home me-3 text-secondary"></i><a href="https://goo.gl/maps/dmiX5syuDcgjXdgy9" target="_blank"> Sri Lanka</a></p>
+            <p>
+            <i class="fas fa-envelope me-3 text-secondary"></i>
+            <a href="hashan@gamil.com">hashan@gamil.com</a>
+            </p>
+            <p><i class="fas fa-phone me-3 text-secondary"></i> + 94 787 18 9456</p>
+            <p><i class="fas fa-print me-3 text-secondary"></i> + 94 123 45 6789</p>
+            </div>
+            </div>
+            </div>
+
+            </section>
+
+            </footer>
+            </section>
+
+            <!-- Copyright -->
+            <div class="w-100 text-center p-3 " style="background-color: rgba(0, 0, 0, 0.904);">
+            <span class="text-muted">© 2023 Copyright :  &nbsp;</span>
+            <a class="text-white" href="index.html">ABClearningcenter.com</a>
+            </div>
+
+
+
+            <script>
+            var nav = document.querySelector('nav');
+
+            window.addEventListener('scroll', function(){
+            if (window.pageYOffset>50){
+            nav.classList.add('bg-dark','shadow');
+
+            }else{
+            nav.classList.remove('bg-dark','shadow');
+            }
+            })
+
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl);
+            })
+
+            var nav_icon = document.getElementById("nav_icon");
+            var nav_bar = document.getElementById("nav_bar");
+            function goblack() {
+            nav.classList.add('bg-dark','shadow');    
+            }
+            function noblack() {
+            nav.classList.remove('bg-dark','shadow');    
+            }
+
+            $( "#tabs" ).tabs();
+            </script>
+    
+    
+        </main>
+    </body>
+</html>

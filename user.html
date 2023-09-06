@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ABC Learning Center</title>
+
+    <!-- links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  <!-- css stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Shantell+Sans&family=Zeyada&display=swap" rel="stylesheet">
+
+
+  <!-- bootstrap js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  
+</head>
+<body class="lightgrey">
+    <!-- Navigation Bar - Start -->
+    <nav class="navbar fixed-top navbar-expand-xl navbar-dark px-2 pt-1 pt-lg-1 " onmouseleave="noblack()" id="nav_bar">
+
+        <div class="container-fluid">
+
+        <a class="navbar-brand headline ps-lg-4" href="index.html">ABC LC</a>
+
+        <a class="navbar-toggler " type="button" data-bs-toggle="collapse" 
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon i" onclick="goblack()" id="nav_icon"></span>
+        </a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <div class="mx-auto"></div>
+
+        <ul class="navbar-nav  me-4 mb-2 mb-lg-0 ">
+
+        <li class="nav-item hover-underline-animation ">
+        <a class="nav-link " aria-current="page" href="index.html">Home</a>
+        </li>
+
+        <li class="nav-item hover-underline-animation w-100">
+        <a class="nav-link" href="about.html">About Us</a>
+        </li>
+
+        <li class="nav-item hover-underline-animation dropdown w-25 w-md-100 ">
+        <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" 
+        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Courses
+        </a>
+
+        <ul class="bg-light dropdown-menu  " aria-labelledby="navbarDropdown">
+        <li><a class="dropdown-item " href="courses.html#section_15">Paid</a></li>
+        <li><a class="dropdown-item" href="courses.html#section_14">Free</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="courses.html">All Courses</a></li>
+        </ul>
+        </li>
+
+        <li class="nav-item hover-underline-animation ">
+        <a class="nav-link active" href="contact.html">Contacts</a>
+        </li>
+
+        <li class="nav-item hover-underline-animation">
+        <a class="nav-link" href="account.html">Account</a>
+        </li>
+
+
+        </ul>
+        <div class="d-flex justify-content-lg-end justify-content-start pt-2 me-2 d-none d-md-block">
+        <form class="d-inline-flex">
+        <input class="form-control me-0 mb-2 " type="search" placeholder="Search Course" aria-label="Search">
+        <button class="btn btn-outline-info mb-2" type="submit">Search</button>
+        </form>
+
+        </div>
+        <div class="d-flex justify-content-lg-start d-none d-md-block">
+        <a type="button" class="btn btn-primary me-1" href="#signin">Log-In</a>
+        <a type="button" class="btn btn-success me-1" href="account.html#reg_form">Sign-Up</a>
+        </div>
+        </div>
+        </div>
+        </nav>
+        <!-- Navigation Bar - End -->
+
+
+        <!-- Section_1 -->
+        <section class="" id="section_1">
+
+        <!-- Banner Image -->
+        <div class="banner-image-admin img-responsive w-100 vh-100 d-flex justify-content-center align-items-center p-5 pt-0 p-lg-0 ">
+        <div class="content text-center cap ">
+        <h4  class=" text-danger fw-bold display-3 pt-5 mt-5 ">ADMIN PAGE</h4>
+        <hr class="p-1 bg-danger width thick"/>
+        <h5  class="fw-bold text-dark display-6 m-3"> Rule the Site </h5>
+
+        <h5  class="fw-bold text-dark display-6 m-3">Admin Only</h5>
+
+        
+
+
+        </div>
+        <!-- end of headers -->
+        </div>
+
+        </section>
+        <!-- end the Section_1 -->
+    
+    <div class="section-padding w-100 vh-100">
+
+        <div  class="py-5">
+        <div class="container  " id="admin">
+            <h1 class="text-center fw-bold cap " >Admin Panel</h1>
+            <br />
+            <fieldset>
+                <legend class="text-center fw-bold cap" >
+                    Users List
+                </legend>
+                <table class="table table-responsive-md ">
+                    <thead>
+                        <tr class="table-dark text-capitalize">
+                            <th>userId</th>
+                            <th>name</th>
+                            <th>email</th>
+                            <th>gender</th>
+                            <th>status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tblbody">
+                    </tbody>
+                </table>
+            </fieldset>
+        </div>
+        </div>
+    </div>
+
+        <!-- Footer -->
+        <section class="" >
+
+        <footer class=" text-center text-lg-start bg-dark text-muted" id="footer">
+
+
+        <section class="section-padding">
+        <div class="container  text-md-start mt-2">
+        <div class="row mt-1">
+        <div class="col-12 col-lg-3 col-xl-3 mx-auto mb-4 boder-right">
+        <div class="d-inline-flex">
+        <div class="d-none d-lg-block">
+        <span> &nbsp&nbsp&nbsp&nbsp&nbsp;</span>
+        </div>
+        <h6 class="text-center text-lg-start fw-bold mb-4">
+        <i class="fas fa-gem me-3"></i> ABC LEARNING CENTER
+        </h6>
+        </div>
+
+
+        <div class="text-center">
+        <div class="container ">
+        <section class="">
+        <form action="">
+        <div class="row d-flex justify-content-center">
+        <div class="col-auto">
+        <p class="pt-2">
+        <strong>Sign up for our newsletter</strong>
+        </p>
+        </div>
+
+        <div class="col-12 ">
+        <div class="form-outline mb-1">
+        <input type="email" id="form5Example27" class="form-control" />
+        <label class="form-label" for="form5Example27">Email address</label>
+        </div>
+        </div>
+
+        <div class="col-auto">
+        <button type="submit" class="btn btn-primary mb-4">
+        Subscribe
+        </button>
+        </div>
+        </div>
+        </form>
+        </section>
+        </div>
+        </div>
+        </div>
+
+        <div class="col-6 col-lg-3 col-xl-3 ps-lg-5 mx-auto mb-4">
+        <h6 class="text-uppercase fw-bold mb-4">
+        Navigation
+        </h6>
+        <p>
+        <a href="index.html" class="text-reset">Home</a>
+        </p>
+        <p>
+        <a href="about.html" class="text-reset">About Us</a>
+        </p>
+        <p>
+        <a href="courses.html" class="text-reset">Courses</a>
+        </p>
+
+        </div>
+
+        <div class="col-6 col-lg-3 col-xl-3 mx-auto mb-4">
+        <h6 class="text-uppercase fw-bold mb-4">
+        Useful links
+        </h6>
+        <p>
+        <a href="privacypoilicy.html" class="text-reset">Privacy Policy</a>
+        </p>
+        <p>
+        <a href="sitemap.html" class="text-reset">SiteMap</a>
+        </p>
+        <p>
+        <a href="account.html#reg_form" class="text-reset">Sign-Up</a>
+        </p>
+
+        </div>
+
+        <div class="col-12 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+        <h6 class="text-uppercase fw-bold mb-4"><a href="contact.html">Contacts</a></h6>
+        <p><i class="fas fa-home me-3 text-secondary"></i><a href="https://goo.gl/maps/dmiX5syuDcgjXdgy9" target="_blank"> Sri Lanka</a></p>
+        <p>
+        <i class="fas fa-envelope me-3 text-secondary"></i>
+        <a href="hashan@gamil.com">hashan@gamil.com</a>
+        </p>
+        <p><i class="fas fa-phone me-3 text-secondary"></i> + 94 787 18 9456</p>
+        <p><i class="fas fa-print me-3 text-secondary"></i> + 94 123 45 6789</p>
+        </div>
+        </div>
+        </div>
+
+        </section>
+
+        </footer>
+        </section>
+
+        <!-- Copyright -->
+        <div class="w-100 text-center p-3 " style="background-color: rgba(0, 0, 0, 0.904);">
+        <span class="text-muted">© 2023 Copyright :  &nbsp;</span>
+        <a class="text-white" href="index.html">ABClearningcenter.com</a>
+        </div>
+<script>
+
+    bindUserData();
+    function addUserDataToLocalStorage(userObj) {
+
+        //already has data in localstorage then update it other create new one
+        var users = JSON.parse(localStorage.getItem('userData'));
+        if (users != null) {
+            users.push(userObj);
+           
+            localStorage.setItem('userData', JSON.stringify(users));
+        }
+        else {
+            var userData = new Array();
+            userData.push(userObj);
+            localStorage.setItem('userData', JSON.stringify(userData));
+
+        }
+    }
+
+    function updateDataToLocalStorage(userObj) {
+
+        var users = JSON.parse(localStorage.getItem('userData'));
+        if (users != null) {
+            var user = users.filter((x) => x.id == userObj.id).pop();
+            if (user != null) {
+                user.name = userObj.name;
+                user.email = userObj.email;
+                user.gender = userObj.gender;
+                user.status = userObj.status;
+            }
+            localStorage.setItem('userData', JSON.stringify(users));
+        }
+    }
+
+    function deletedataFromLocalStorage(UserId) {
+
+        var users = JSON.parse(localStorage.getItem('userData'));
+        if (users != null) {
+            users.splice(users.findIndex(a => a.id === UserId), 1)
+            localStorage.setItem('userData', JSON.stringify(users));
+        }
+    }
+
+
+    function bindUserData() {
+        var users = JSON.parse(localStorage.getItem('userData'));
+        if (users != null) {
+            document.getElementById('tblbody').innerHTML = "";
+            users.forEach(function (item, index) {
+                debugger;
+                var btnEditId = "btnedit" + item.id;
+                var btnDeleteId = "btndelete" + item.id;
+                var tableRow = "<tr Id='" + item.id + "'   data-CustomerID='" + item.id + "'   data-name='" + item.name + "' data-email='" + item.email + "' data-gender='" + item.gender + "' data-status='" + item.status + "'>"
+                    + "<td class='td-data'>" + item.id + "</td>"
+                    + "<td class='td-data'>" + item.name + "</td>"
+                    + "<td class='td-data'>" + item.email + "</td>"
+                    + "<td class='td-data'>" + item.gender + "</td>"
+                    + "<td class='td-data'>" + item.status + "</td>"
+                    + "<td class='td-data'>" +
+                    "<button id='" + btnEditId + "' class='btn btn-info btn-xs btn-editcustomer' onclick='showEditRow(" + item.id + ")'><i class='fa fa-pencil' aria-hidden='true'></i>Edit</button>" +
+                    "<button id='" + btnDeleteId + "' class='btn btn-danger btn-xs btn-deleteCustomer' onclick='deleteRow(" + item.id + ")'><i class='fa fa-trash' aria-hidden='true'>Delete</button>"
+                    + "</td>"
+                    + "</tr>";
+                document.getElementById('tblbody').innerHTML += tableRow;
+            })
+        }
+        var AddRow = "<tr>"
+            + "<td class='td-data'></td>"
+            + "<td class='td-data'><input type='text' id='txtname' placeholder='name..'></td>"
+            + "<td class='td-data'><input type='email' id='txtemail' placeholder='email..'></td>"
+            + "<td class='td-data'><select id='ddlgender'><option value='male'>male</option><option value='female'>female</option></select></td>"
+            + "<td class='td-data'><select id='ddlstatus'><option value='active'>active</option><option value='inactive'>inactive</option></select></td>"
+            + "<td class='td-data'>" + "<button id= 'btnaddCustomer' onclick='addUser()' class='btn btn-success'> <i class='fa fa-plus-circle' aria-hidden='true'></i>Add</button>" + "</td>"
+            + "</tr>";
+        document.getElementById('tblbody').innerHTML += AddRow;
+    }
+
+    function GetUserID() {
+        const ID = Date.now();
+        return ID;
+    }
+
+    function addUser() {
+        var userId = GetUserID();
+        var txtname = document.getElementById("txtname").value;
+        if (!txtname) {
+            alert('Please enter name!')
+            return false;
+        }
+        var email = document.getElementById("txtemail").value;
+        if (!email) {
+            alert('Please enter email!')
+            return false;
+        }
+        var emailfilter = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        if (!emailfilter.test(email)) {
+            alert('Please enter a valid email address!');
+            return false;
+        }
+
+        var gender = document.getElementById("ddlgender").value;
+        var status = document.getElementById("ddlstatus").value;
+        var userObj = {
+            "id": userId,
+            "name": txtname,
+            "email": email,
+            "gender": gender,
+            "status": status
+        };
+        addUserDataToLocalStorage(userObj);
+        document.getElementById('txtname').value = "";
+        document.getElementById('txtemail').value = "";
+        bindUserData();
+    };
+
+    function showEditRow(UserID) {
+        var userRow = document.getElementById(UserID); //this gives tr of  whose button was clicked
+        var trdata = userRow.querySelectorAll(".td-data");
+        /*returns array of all elements with
+        "row-data" class within the row with given id*/
+        var userID = trdata[0].innerHTML;
+        var userName = trdata[1].innerHTML;
+        var useremail = trdata[2].innerHTML;
+        var userGender = trdata[3].innerHTML;
+        var userStatus = trdata[4].innerHTML;
+
+        trdata[0].innerHTML = '<input name="txtuserid"  disabled id="txtuserid" value="' + userID + '"/>';
+        trdata[1].innerHTML = '<input name="txtname" id="txtname" value="' + userName + '"/>';
+        trdata[2].innerHTML = '<input name="txtemail" id="txtemail" value="' + useremail + '"/>';
+        if (userGender == 'male') {
+            trdata[3].innerHTML = '<select id="ddlgender"><option value="male">male</option><option value="female">female</option></select>';
+        }
+        else {
+            trdata[3].innerHTML = '<select id="ddlgender"><option value="female">female</option><option value="male">male</option></select>';
+        }
+        if (userStatus == 'active') {
+            trdata[4].innerHTML = '<select id="ddlstatus"><option value="active">active</option><option value="inactive">inactive</option></select>';
+        }
+        else {
+            trdata[4].innerHTML = '<select id="ddlstatus"><option value="inactive">inactive</option><option value="active">active</option></select>';
+        }
+
+        trdata[5].innerHTML =
+            "<button class='btn btn-primary btn-xs btn-updateCustomer' onclick='updateUser(" + userID + ")'>" +
+            "<i class='fa fa-pencil' aria-hidden='true'></i>Update</button>"
+            + "<button class='btn btn-warning btn-xs btn-cancelupdate' onclick='cancel(" + userID + ")'><i class='fa fa-times' aria-hidden='true'></i>Cancel</button>"
+            + "<button class='btn btn-danger btn-xs btn-deleteCustomer' onclick='deleteUser(" + userID + ")'>"
+            + "<i class='fa fa-trash' aria-hidden='true'></i>Delete</button>"
+    }
+    function cancel(UserID) {
+        debugger;
+        var btneditId = "btnedit" + UserID;
+        var btndeleteId = "btndelete" + UserID;
+
+        var CustomerRow = document.getElementById(UserID); //this gives tr of  whose button was clicked
+        var data = CustomerRow.querySelectorAll(".td-data");
+
+        var name = CustomerRow.getAttribute("data-name");
+        var email = CustomerRow.getAttribute("data-email");
+        var gender = CustomerRow.getAttribute("data-gender");
+        var status = CustomerRow.getAttribute("data-status");
+
+        data[0].innerHTML = UserID;
+        data[1].innerHTML = name;
+        data[2].innerHTML = email;
+        data[3].innerHTML = gender;
+        data[4].innerHTML = status;
+        var actionbtn = "<button id='" + btneditId + "' class='btn btn-info btn-xs btn-editcustomer' onclick='showEditRow(" + UserID + ")'><i class='fa fa-pencil' aria-hidden='true'></i>Edit</button>" +
+            "<button id='" + btndeleteId + "' class='btn btn-danger btn-xs btn-deleteCustomer' onclick='deleteRow(" + UserID + ")'><i class='fa fa-trash' aria-hidden='true'>Delete</button>"
+        data[5].innerHTML = actionbtn;
+    }
+    function updateUser(UserID) {
+        var userRow = document.getElementById(UserID); //this gives tr of  whose button was clicked
+        var data = userRow.querySelectorAll(".td-data");
+        var name = data[1].querySelector("#txtname").value;
+        var email = data[2].querySelector("#txtemail").value;
+        var gender = data[3].querySelector("#ddlgender").value;
+        var status = data[4].querySelector("#ddlstatus").value;
+        var userObj = {
+            "id": UserID,
+            "name": name,
+            "email": email,
+            "gender": gender,
+            "status": status
+        };
+        updateDataToLocalStorage(userObj);
+        bindUserData();
+    }
+    function deleteRow(UserID) {
+        deletedataFromLocalStorage(UserID);
+        bindUserData();
+    }
+
+    var nav = document.querySelector('nav');
+
+            window.addEventListener('scroll', function(){
+            if (window.pageYOffset>50){
+            nav.classList.add('bg-dark','shadow');
+
+            }else{
+            nav.classList.remove('bg-dark','shadow');
+            }
+            })
+
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl);
+            })
+
+            
+            var nav_icon = document.getElementById("nav_icon");
+            var nav_bar = document.getElementById("nav_bar");
+            function goblack() {
+            nav.classList.add('bg-dark','shadow');    
+            }
+            function noblack() {
+            nav.classList.remove('bg-dark','shadow');    
+            }
+
+
+</script>
+
+</body>
+</html>

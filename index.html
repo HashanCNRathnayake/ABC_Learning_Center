@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ABC Learning Center</title>
+
+  <!-- links --> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!-- css stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- fonts -->
+
+
+  <!-- bootstrap js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  
+</head>
+<body>
+
+  <!-- Navigation Bar - Start -->
+  <nav class="navbar fixed-top navbar-expand-xl navbar-dark px-2 " onmouseleave="noblack()" id="nav_bar">
+    
+    <div class="container-fluid">
+
+      <a class="navbar-brand headline ps-lg-4" href="index.html">ABC LC</a>
+
+      <button class="navbar-toggler "  data-bs-toggle="collapse" 
+      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span  class="navbar-toggler-icon  i a" onclick="goblack()" id="nav_icon"></span>
+    </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <div class="mx-auto"></div>
+
+          <ul class="navbar-nav  me-4 mb-2 mb-lg-0 ">
+            
+            <li class="nav-item hover-underline-animation ">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+
+            <li class="nav-item hover-underline-animation w-100">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+
+            <li class="nav-item hover-underline-animation dropdown w-25 w-md-100 ">
+              <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" 
+              role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Courses
+              </a>
+
+              <ul class="bg-light dropdown-menu  " aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item " href="courses.html#section_15">Paid</a></li>
+                <li><a class="dropdown-item" href="courses.html#section_14">Free</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="courses.html">All Courses</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item hover-underline-animation ">
+              <a class="nav-link" href="contact.html">Contacts</a>
+            </li>
+
+            <li class="nav-item hover-underline-animation">
+              <a class="nav-link" href="account.html">Account</a>
+            </li>
+           
+            
+          </ul>
+          <div class="d-flex justify-content-lg-end justify-content-start pt-2 me-2 d-none d-md-block">
+            <form class="d-inline-flex">
+              <input class="form-control me-0 mb-2 " type="search" placeholder="Search Course" aria-label="Search">
+              <button class="btn btn-outline-info mb-2" type="submit">Search</button>
+            </form>
+            
+          </div>
+          <div class="d-flex justify-content-lg-start d-none d-md-block">
+            <a  class="btn btn-primary me-1" href="#signin">Log-In</a>
+            <a  class="btn btn-success me-1" href="account.html#reg_form">Sign-Up</a>
+          </div>
+      </div>
+    </div>
+  </nav>
+  <!-- Navigation Bar - End -->
+
+    <main>
+
+      <!-- Section_1 -->
+      <!-- Banner  -->
+      <section  id="section_1">
+
+        <!-- Banner Image -->
+        <div class="banner-image img-responsive w-100 vh-100 d-flex justify-content-center align-items-center ">
+          <div class="content text-center cap ">
+            <h4  class="text-white bold fw-bold display-4 pt-5 mt-5 ">Be Educated</h4>
+            <h5  ><kbd class="px-2 py-1">with</kbd></h5>
+            <h5  class="fw-bold text-dark display-6">Low Cost</h5>
+            <h5  class="fw-bold text-info display-6">At Home</h5>
+            <h5  class="fw-bold text-warning display-6">Any Time</h5>
+
+            <div class="d-flex justify-content-center pt-3 ">
+              <form class="d-inline-flex width">
+                <input class="form-control me-0 mb-3 "  type="search" placeholder="Search Course" aria-label="Search">
+                <button class="btn btn-info mb-3 display-5 so" type="submit">Search</button>
+              </form>
+              
+            </div>
+            
+            
+          <div class="d-flex justify-content-center pt-3 ">
+            <a  class="btn btn-primary me-2 " href="#signin">Log-In</a>
+            <a  class="btn btn-success " href="account.html#reg_form">Sign-Up Free</a>
+          </div>
+          <div class="display-4 pt-5">
+            <a href="#section_2" ><i class="fa-solid fa-circle-arrow-down btn-outline-light so"></i></a>
+          </div>
+
+          </div>
+        </div>
+
+      </section>
+
+      <!--Floating Section: Social media -->
+      <section class="box " id="section_7">
+      <div class="container ps-0 ms-0">
+
+      <!-- Facebook -->
+      <div >
+
+      <a
+      data-bs-toggle="tooltip" 
+      data-bs-placement="right" 
+      title="Facebook"
+      class="btn text-white so mt-1 ps-3 pt-2 pe-3  "
+      style="background-color: #3b5998;"
+      href="https://www.facebook.com/hashan.rathnayake.9210?mibextid=ZbWKwL"
+      role="button"
+      ><i class="fab fa-facebook-f"></i></a>
+      </div>
+
+      <!-- Twitter -->
+      <div >
+      <a
+      data-bs-toggle="tooltip" 
+      data-bs-placement="right" 
+      title="Twitter"
+      class="btn text-white btn-floating so mt-1  "
+      style="background-color: #55acee;"
+      href="https://twitter.com/?lang=en"
+      role="button"
+      ><i class="fab fa-twitter"></i
+      ></a>
+      </div>
+
+      <!-- Google -->
+      <div >
+      <a
+      data-bs-toggle="tooltip" 
+      data-bs-placement="right" 
+      title="Google"
+      class="btn text-white btn-floating so mt-1  "
+      style="background-color: #dd4b39;"
+      href="mailto:hashan24360@gmail.com?cc=hashiyapc123@gmail.com&bcc=hashanrathnayake@gmail.com&subject=Suggestions&body=Type the relavant Content"
+      role="button"
+      ><i class="fab fa-google"></i
+      ></a>
+      </div>
+
+      <!-- Instagram -->
+      <div >
+      <a
+      data-bs-toggle="tooltip" 
+      data-bs-placement="right" 
+      title="Instagram"
+      class="btn text-white btn-floating so mt-1  "
+      style="background-color: #ac2bac;"
+      href="https://www.instagram.com/"
+      role="button"
+      ><i class="fab fa-instagram"></i
+      ></a>
+      </div>
+
+      <!-- Linkedin -->
+      <div >
+
+      <a
+      data-bs-toggle="tooltip" 
+      data-bs-placement="right" 
+      title="Linkedin"
+      class="btn text-white btn-floating so mt-1  "
+      style="background-color: #0082ca;"
+      href="https://www.linkedin.com/"
+      role="button"
+      ><i class="fab fa-linkedin-in"></i
+      ></a>
+      </div>
+
+      <!-- Github -->
+      <div >
+
+      <a
+      data-bs-toggle="tooltip" 
+      data-bs-placement="right" 
+      title="Github"
+      class="btn text-white btn-floating so mt-1  "
+      style="background-color: #333333;"
+      href="https://github.com/"
+      role="button"
+      ><i class="fab fa-github"></i
+      ></a>
+      </div>
+
+
+      </div>
+      </section>
+      <!-- end the section_7 -Floating social media as -->
+
+
+
+
+
+
+      <!-- Section_2 -->
+      <!-- Features  -->
+      <section class="section-padding ps-5 pe-5" id="section_2">
+
+        <div class="container-fluid   ">
+          
+          <div class="row">
+            <div class="col-lg-6 col-12 d-flex justify-content-center text-center text-lg-start">
+              <div >
+                <h2 class="mb-2 text-dark pb-4 display-5 fw-bold cap">
+                  Our
+                  <span class="text-dark">Fe<u class="text-primary">atures</u></span>
+                  
+                </h2>
+
+                <p class="text fs-5">
+                 We are conducting an interesting Educational Website for who are willing to study freely with very low cost.
+                 Our website has various features to help you who want to be educated rapidly. <br><br>
+                 <span class="fs-5 fw-bold ">Here are some of them</span>
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-12 pb-4 align-items-center justify-content-center">
+                <img src="img/f1.jpg" class="image-head img-responsive  " alt="">
+            </div>
+          </div>
+
+        <!-- 2nd Row -->
+        <div class="row justify-content-center text-center pt-5">
+
+          <div class="col-lg-3 col-md-6 col-12">
+            <div >
+              <img src="img/User-Friendly-Website-Design.jpg" class="image img-responsive" alt="">
+
+              <div class="text-center">
+                <h5 >User Friendly</h5>
+                <p class="text">User can use the website very easily and very interesting</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-12">
+            <div >
+              <img src="img/teacher-job-description.webp" class="image img-responsive" alt="">
+
+              <div class="text-center">
+                <h5 >Professional Qualified<br>Teachers</h5>
+                <p class="text ">Teachers are qualified more than five years of experience in respective subjects</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-12">
+            <div >
+              <img src="img/effe.jpeg" class="image img-responsive" alt="">
+
+              <div class="text-center">
+                <h5 >Efficient</h5>
+                <p class="text ">In here, cost is very low, but the education is more standard and valuable</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-12">
+            <div >
+              <img src="img/4-types-compatibility-standards-in-elearning.webp" class="image img-responsive" alt="">
+
+              <div class="text-center">
+                <h5 >Standard Leaning</h5>
+                <p class="text ">More reliable and standard new syllabus Is compressed in these courses with many learning resources</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+      </section>
+
+      <!-- Section_3 -->
+      <!-- Benifits  -->
+      <section class="section-padding ps-5 pe-5" id="section_3">
+
+        <div class="container-fluid">
+          
+          <div class="row">
+            <div class="col-12 text-center ">
+              <div >
+                <h2 class="mb-2 text-dark display-5 pb-4  fw-bold cap">Be<u class="text-primary fw-bold">nifits</u></h2>
+
+                <p class="text fs-5">
+                 With our all features, User will be had many benifits from this leaning. <br><br>
+                 <span class="fs-5 fw-bold ">Here are some of them</span>
+                </p>
+              </div>
+            </div>
+
+            
+          </div>
+
+        <!-- 2nd Row -->
+        <div class="row">
+
+          <div class="col-lg-6 col-md-6 col-12 text-center">
+            <div >
+              <img src="img/low.jpg" class="image2 img-responsive " alt="">
+
+              <div class="text-center">
+                <h5 >Low cost</h5>
+                <p class="text ">The main benefits among of others is low cost. There are many courses which are actually cost lower than usual sites, but the standard is same</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 col-12 text-center ">
+            <div >
+              <img src="img/free.webp" class="image2 img-responsive " alt="">
+
+              <div class="text-center">
+                <h5 >Free Courses</h5>
+                <p class="text ">Also, we have got some free courses those are 100% free of cost with a valuable certificate</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 col-12 text-center ">
+            <div >
+              <img src="img/fast-learning-hand-drawn-vector-illustration-222486999.jpg" class="image2 img-responsive " alt="">
+
+              <div class="text-center">
+                <h5 >Fast learning</h5>
+                <p class="text ">If you can learn fast and observing accurately, this is your chance. You can get access to the whole course at once and do it within days</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 col-12 text-center ">
+            <div >
+              <img src="img/certification(1).jpeg"  class="image2 img-responsive " alt="">
+
+              <div class="text-center pt-3">
+                <h5 >Certificates</h5>
+                <p class="text ">All the courses that students are completing will be awarded by a valuable international certificate</p>
+              </div>
+            </div>
+          </div>
+          
+
+         
+
+        </div>
+
+
+      </div>
+      </section>
+
+      <!-- Section_4 -->
+      <!-- Trending Courses -->
+      <section class="section-padding ps-5 pe-5 " id="section_4">
+
+        <div class="container-fluid ">
+
+          <div class="row">
+            <div class="flex-column text-center ">
+              <h2 class="pb-4 display-5">
+                <span class="mb-2 text-dark pb-4  fw-bold cap">Tre<u class="text-primary  fw-bold">nding</u></span>
+                <span class="mb-2 text-dark pb-4  fw-bold cap">Co<u class="text-primary  fw-bold">urses</u></span>
+              </h2>
+                
+            </div>
+          </div>
+          
+          <!-- 1st Row -->
+
+          <div class="row pt-4">
+            <div class="col-lg-6 col-12 d-flex justify-content-center align-items-start text-center text-lg-start ">
+              <div >
+                <h2 class=" text-dark display-5 fw-bold">J<u class="text-primary display-6 fw-bold">AVA</u></h2>
+
+                <div class="col-lg-6 col-12 px-auto pb-5 pt-4 d-lg-none d-block">
+                  <img src="img/Java-Course.jpg" class="image-head img-responsive " alt="">
+              </div>
+
+                <p class="text fs-5">
+                  Java is a widely used and popular programming language
+                  The Java programming language, which is widely used with corporate applications and Android mobile operating systems, is regularly updated to stay up-to-date with industry developments and can support a wide range of languages throughout its platform <br><br>
+                </p>
+              </div>
+            </div>
+          
+            <div class="col-lg-6 col-12 px-auto pb-4 d-none d-lg-block">
+                <img src="img/Java-Course.jpg" class="image-head img-responsive " alt="">
+            </div>
+          </div>
+          
+          <!-- Button -->
+          
+          <div class="container text-center">
+              <div >
+                <div class="row row-cols-1 row-cols-lg-4">
+                  <div class="col"></div>
+                  <div class="col">
+                    <a  class="btn btn-info me-2 fs fw-bold w-100   " href="java.html">Read More</a>
+                  </div>
+                  
+                  <div class="col">
+                    <a  class="btn btn-danger me-2 fs fw-bold w-100" href="java.html">Enroll Now</a>
+                  </div>
+                  <div class="col"></div>
+                </div>
+            </div>
+          </div>
+          <br><br><hr><br><br>
+
+        <!-- 2nd Row -->
+        <div class="row">
+          <div class="col-lg-6 col-12 pb-4 px-auto d-none d-lg-block">
+            <img src="img/html.png" class="image-head img-responsive " alt="">
+          </div>
+
+          <div class="col-lg-6 col-12 d-flex justify-content-center align-items-start text-center text-lg-start">
+            <div >
+              <h2 class="mb-2 text-dark pb-4 display-5 fw-bold">H<u class="text-primary display-6 fw-bold">TML</u></h2>
+
+              <div class="col-lg-6 col-12 pb-5 px-auto d-lg-none d-block">
+                <img src="img/html.png" class="image-head img-responsive " alt="">
+              </div>
+
+              <p class="text fs-5 pb-4">
+                What is HTML and explain?
+                HTML stands for Hyper Text Markup Language. HTML is the standard markup language for creating Web pages. HTML describes the structure of a Web page. HTML consists of a series of elements. HTML elements tell the browser how to display the content
+              </p>
+            </div>
+          </div>
+          
+        </div>
+
+         <!-- Button -->
+         <div class="container text-center">
+          <div >
+            <div class="row row-cols-1 row-cols-lg-4">
+              <div class="col"></div>
+              <div class="col">
+                <a  class="btn btn-info me-2 fs fw-bold w-100   " href="html.html">Read More</a>
+              </div>
+              
+              <div class="col">
+                <a  class="btn btn-danger me-2 fs fw-bold w-100" href="html.html">Enroll Now</a>
+              </div>
+              <div class="col"></div>
+            </div>
+        </div>
+      </div>
+      <br><br><hr><br><br>
+
+        <!-- 3rd Row -->
+
+        <div class="row pt-2">
+          <div class="col-lg-6 col-12 d-flex justify-content-center align-items-start text-center text-lg-start ">
+            <div >
+              <h2 class=" text-dark display-5 fw-bold">MS<u class="text-primary display-6 fw-bold">Office</u></h2>
+
+              <div class="col-lg-6 col-12 px-auto pb-5 pt-4 d-lg-none d-block">
+                <img src="img/ms office.jpg" class="image-head img-responsive " alt="">
+            </div>
+
+              <p class="text fs-5">
+                Microsoft Office is a suite of applications designed to help with productivity and completing common tasks on a computer. You can create and edit documents containing text and images, work with data in spreadsheets and databases, and create presentations and posters<br><br>
+              </p>
+            </div>
+          </div>
+        
+          <div class="col-lg-6 col-12 px-auto pb-4 d-none d-lg-block">
+              <img src="img/ms office.jpg" class="image-head img-responsive " alt="">
+          </div>
+        </div>
+        
+         <!-- Button -->
+         <div class="container text-center">
+          <div >
+            <div class="row row-cols-1 row-cols-lg-4">
+              <div class="col"></div>
+              <div class="col">
+                <a  class="btn btn-info me-2 fs fw-bold w-100   " href="courses.html#section_14">Read More</a>
+              </div>
+              
+              <div class="col">
+                <a  class="btn btn-danger me-2 fs fw-bold w-100" href="courses.html#section_14">Enroll Now</a>
+              </div>
+              <div class="col"></div>
+            </div>
+        </div>
+      </div>
+      <br>
+
+      </div>
+      </section>
+
+      <!-- Section_5 -->
+      <!-- quotes  -->
+      <section class="section-padding ps-5 pe-5"  id="section_5">
+
+        <div class="container-fluid ">
+
+          <div class="row">
+            <div class="flex-column text-center ">
+              <h2 class="pb-4 display-5">
+                <span class="mb-2 text-dark pb-4  fw-bold cap">In<u class="text-primary  fw-bold">spirational</u></span>
+                <span class="mb-2 text-dark pb-4  fw-bold cap">Q<u class="text-primary  fw-bold">uotes</u></span>
+              </h2>
+                <p class="text fs-5">
+                  A strong inspirational quote will provide motivation and encouragement and will make you feel like you can accomplish something better.
+                  A good quote is a priceless pearl of wisdom that has the power to change your perspective and can stick with you for life
+                <br><br><span class="fs-5 fw-bold ">Here are some valuble quotes among them</span>
+                </p>
+            </div>
+          </div>
+          <br><hr><br><br>
+
+          
+          <!-- 1st Row -->
+          <div class="row">
+            <div class="col-lg-4 col-12 d-flex justify-content-center align-items-center">
+              <img src="img/Investment_know2.png" class="image-head img-responsive " alt="">
+            </div>
+  
+            <div class="col-lg-8 col-12 d-flex justify-content-center align-items-start text-center text-lg-start">
+              <div >
+  
+                <span class="text fs-5 pb-3 pt-3 fw-bold">
+                  “An investment in knowledge pays the best interest.”
+                </span>
+                <br>
+                <div class="text-center">
+                  <span class="mb-2 text-dark pb-4  fw-bold"> – Benjamin<span class="text-primary "> Franklin</span></span>
+
+                </div>
+               
+                <div class="d-flex justify-content-center">
+                </div>
+                <div>
+                  <p class="text-small pb-3 pt-3 text-center">
+                    There’s no doubt that the cost of education is on the rise. The financial concerns of earning your education should never stop you from doing so because, as Benjamin Franklin once said, this investment in yourself will pay you back with interest over your entire lifetime. Additionally, you can earn your education in a cost-effective way. Check out the University of the People’s degree programs that are all tuition-free. 
+  
+                  </p>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <br><hr><br><br>
+
+          <!-- 2nd Row -->
+          <div class="row">
+            <div class="col-lg-4 col-12 d-flex justify-content-center align-items-center">
+              <img src="img/educa-pass.jpeg" class="image-head img-responsive " alt="">
+            </div>
+  
+            <div class="col-lg-8 col-12 d-flex justify-content-center align-items-start text-center text-lg-start">
+              <div >
+  
+                <span class="text fs-5 pb-3 pt-3 fw-bold">
+                  “Education is the passport to the future, for tomorrow belongs to those who prepare for it today.”</span>
+                  <br>
+                  <div class="text-center">
+                    <span class="mb-2 text-dark pb-4  fw-bold"> – Mal<span class="text-primary ">colm X </span></span>
+                  </div>
+                <div class="d-flex justify-content-center">
+                </div>
+                <div>
+                  <p class="text-small pb-3 pt-3 text-center">
+                    While it’s safe to say that no one knows what will happen tomorrow, having an education under your belt will open the door to more opportunities. These job opportunities are also likely to pay more with more education, so what you do today in terms of education will surely prepare you for what’s yet to come.
+  
+                  </p>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <br><hr><br><br>
+
+          <!-- 3rd Row -->
+          <div class="row">
+            <div class="col-lg-4 col-12 d-flex justify-content-center align-items-center">
+              <img src="img/learn as live forever.webp" class="image-head img-responsive " alt="">
+            </div>
+  
+            <div class="col-lg-8 col-12 d-flex justify-content-center align-items-start text-center text-lg-start">
+              <div >
+  
+                <span class="text fs-5 pb-3 pt-3 fw-bold">
+                  “Live as if you were to die tomorrow. Learn as if you were to live forever.” 
+                </span><br>
+                <br>
+                <div class="text-center">
+                  <span class="mb-2 text-dark pb-4 fw-bold"> –  Mahatma<span class="text-primary "> Gandhi</span></span>
+                </div>
+                <div class="d-flex justify-content-center">
+                </div>
+                <div>
+                  <p class="text-small pb-3 pt-3 text-center">
+                    The great thing about learning is that you never have to stop! There’s no limit as to the amount of knowledge you can obtain. So, rip a page from Gandhi’s book and keep on learning while you’re living.
+  
+                  </p>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <br><hr><br><br>
+
+          <!-- 4rd Row -->
+          <div class="row">
+            <div class="col-lg-4 col-12 d-flex justify-content-center align-items-center">
+              <img src="img/cant be stolen.jpeg" class="image-head img-responsive " alt="">
+            </div>
+  
+            <div class="col-lg-8 col-12 d-flex justify-content-center align-items-start text-center text-lg-start">
+              <div >
+  
+                <span class="text fs-5 pb-3 pt-3 fw-bold">
+                  “Education is one thing no one can take away from you.” 
+                </span><br>
+                <br>
+                <div class="text-center">
+                  <span class="mb-2 text-dark pb-4 fw-bold"> –  Elin <span class="text-primary ">Nordegren</span></span>
+                </div>
+                <div class="d-flex justify-content-center">
+                </div>
+                <div>
+                  <p class="text-small pb-3 pt-3 text-center">
+                    If there’s one thing that’s certain in life is that everything is constantly changing. You may suffer losses when it comes to loved ones, finances, belongings, and the like. But, the thing that you can never lose is your education.
+  
+                  </p>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <br>
+
+          
+
+         
+        </div>
+      </section>
+
+
+
+
+
+
+
+
+      <!-- Section_6 -->
+      <!-- Section: Social media -->
+      <!-- Sign in form -->
+      <section class="bg-lightblue pb-4" id="section_6">
+        <!-- Section: Social media -->
+        <section class="pt-5 pb-5 mt-3">
+          <div class="container d-flex justify-content-lg-center ">
+            <div class="container">
+              <div class="row row-cols-3 row-cols-lg-6">
+                
+              <!-- Facebook -->
+              <div class="col text-center">
+                <a
+                class="btn text-white btn-floating so m-3 ps-4 pe-4 fs-1"
+                style="background-color: #3b5998;"
+                href="https://www.facebook.com/hashan.rathnayake.9210?mibextid=ZbWKwL"
+                role="button"
+                ><i class="fab fa-facebook-f"></i></a>
+              </div>
+        
+              <!-- Twitter -->
+              <div class="col text-center">
+                <a
+                class="btn text-white btn-floating so m-3 ps-3 pe-3 fs-1"
+                style="background-color: #55acee;"
+                href="https://twitter.com/?lang=en"
+                role="button"
+                ><i class="fab fa-twitter"></i
+                ></a>
+              </div>
+        
+              <!-- Google -->
+              <div class="col text-center">
+                <a
+                class="btn text-white btn-floating so m-3 ps-3 pe-3 fs-1"
+                style="background-color: #dd4b39;"
+                href="mailto:hashan24360@gmail.com?cc=hashiyapc123@gmail.com&bcc=hashanrathnayake@gmail.com&subject=Suggestions&body=Type the relavant Content"
+                role="button"
+                ><i class="fab fa-google"></i
+              ></a>
+              </div>
+        
+              <!-- Instagram -->
+              <div class="col text-center">
+                <a
+                class="btn text-white btn-floating so m-3 ps-3 pe-3 fs-1"
+                style="background-color: #ac2bac;"
+                href="https://www.instagram.com/"
+                role="button"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              </div>
+        
+              <!-- Linkedin -->
+              <div class="col text-center">
+                <a
+                class="btn text-white btn-floating so m-3 ps-3 pe-3 fs-1"
+                style="background-color: #0082ca;"
+                href="https://www.linkedin.com/"
+                role="button"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              </div>
+
+              <!-- Github -->
+              <div class="col text-center">
+                <a
+                class="btn text-white btn-floating so m-3 ps-3 pe-3 fs-1"
+                style="background-color: #333333;"
+                href="https://github.com/"
+                role="button"
+                ><i class="fab fa-github"></i
+              ></a>
+              </div>
+            
+
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Sign in form -->
+        <section class="form-signin text-center" id="signin">
+          <form class="text-center bg-lightblue p-3 pt-1">
+            <h4 class="p-6">Create An Account</h4>
+            <img class="m-0 p-0 image-icon mb-4 so" src="img/prof.png" alt="" >
+            <h6 class="fs-5 mb-5 fw-normal">Please Sign In</h6>
+        
+            <div class="form-floating so ">
+              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Email address</label>
+            </div>
+            <div class="form-floating  so">
+              <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+              <label for="floatingPassword">Password</label>
+            </div><br>
+                  
+            <div class="d-flex justify-content-around mb-3 checkbox fs-6">
+              <div>
+                <input type="checkbox" value="remember-me"> Remember me
+              </div>
+              <div>
+                <a onclick="alert('\t\t\t\t\t\t\t Hii... HOW ARE YOU !\n\nSORRY THIS OPTION IS CURRENTLY UNAVAILABLE\n\n\t\t\t\t\t\t\t LOVE YOU')" class="nostyle">Forget Your Password?</a>
+              </div>
+            </div>
+            <div class="pb-3 pt-3 ">
+              <button onclick="alert('\t\t\t\t\t\t\t Hii... HOW ARE YOU !\n\nSORRY THIS OPTION IS CURRENTLY UNAVAILABLE\n\n\t\t\t\t\t\t\t LOVE YOU')" class="w-50 btn btn-primary so  " type="submit">Sign in</button>
+            </div>
+            <hr >
+            <p>or</p>
+
+            <div>
+              <div class="d-flex justify-content-around fs-1 ps-5 ms-5 pe-5 me-5 " >
+                <div class="text-primary so2">
+                  <a onclick="alert('\t\t\t\t\t\t\t Hii... HOW ARE YOU !\n\nSORRY THIS OPTION IS CURRENTLY UNAVAILABLE\n\n\t\t\t\t\t\t\t LOVE YOU')">
+                  <i class="fa-brands fa-square-facebook"></i>
+              </a></div>
+              
+              <div class="text-success so2">
+                  <a onclick="alert('\t\t\t\t\t\t\t Hii... HOW ARE YOU !\n\nSORRY THIS OPTION IS CURRENTLY UNAVAILABLE\n\n\t\t\t\t\t\t\t LOVE YOU')">
+                  <i class="fa-brands fa-google"></i>
+              </a></div>
+
+              <div class="text-info so2">
+                  <a onclick="alert('\t\t\t\t\t\t\t Hii... HOW ARE YOU !\n\nSORRY THIS OPTION IS CURRENTLY UNAVAILABLE\n\n\t\t\t\t\t\t\t LOVE YOU')">
+                  <i class="fa-brands fa-square-twitter"></i>
+              </a></div>
+              </div>
+              <div class="pb-3 pt-3 ">
+                <a href="account.html#reg_form"  class="w-75 btn btn-success so " type="submit">Crate An Account</a>
+              </div>
+              <hr >
+              <p class="mt-5 mb-3 text-muted">&copy; 2023</p>
+
+            </div>
+          </form>
+        </section>
+      </section>
+
+      <!-- Footer -->
+      <section  >
+
+        <footer class=" text-center text-lg-start bg-dark text-muted" id="footer">
+          
+
+          <section class="section-padding">
+            <div class="container  text-md-start mt-2">
+              <div class="row mt-1">
+                <div class="col-12 col-lg-3 col-xl-3 mx-auto mb-4 boder-right">
+                  <div class="d-inline-flex">
+                    <div class="d-none d-lg-block">
+                      <span> &nbsp;&nbsp;&nbsp;</span>
+                    </div>
+                    <span class="text-center text-lg-start fw-bold mb-4">
+                      <i class="fas fa-gem me-0"></i> ABC LEARNING CENTER
+                    </span>
+                  </div>
+                 
+                  
+                 <div class="text-center">
+                    <div class="container ">
+                      <section >
+                        <form>
+                          <div class="row d-flex justify-content-center">
+                            <div class="col-auto">
+                              <p class="pt-2">
+                                <strong>Sign up for our newsletter</strong>
+                              </p>
+                            </div>
+                  
+                            <div class="col-12 ">
+                              <div class="form-outline mb-1">
+                                <input type="email" id="form_email" class="form-control" />
+                                <label class="form-label" for="form_email">Email address</label>
+                              </div>
+                            </div>
+                  
+                            <div class="col-auto">
+                              <button type="submit" class="btn btn-primary mb-4">
+                                Subscribe
+                              </button>
+                            </div>
+                          </div>
+                        </form>
+                      </section>
+                    </div>
+                 </div>
+                </div>
+                
+                <div class="col-6 col-lg-3 col-xl-3 ps-lg-5 mx-auto mb-4">
+                  <h6 class="text-uppercase fw-bold mb-4">
+                    Navigation
+                  </h6>
+                  <p>
+                    <a href="index.html" class="text-reset">Home</a>
+                  </p>
+                  <p>
+                    <a href="about.html" class="text-reset">About Us</a>
+                  </p>
+                  <p>
+                    <a href="courses.html" class="text-reset">Courses</a>
+                  </p>
+                  
+                </div>
+
+                <div class="col-6 col-lg-3 col-xl-3 mx-auto mb-4">
+                  <h6 class="text-uppercase fw-bold mb-4">
+                    Useful links
+                  </h6>
+                  <p>
+                    <a href="privacypoilicy.html" class="text-reset">Privacy Policy</a>
+                  </p>
+                  <p>
+                    <a href="sitemap.html" class="text-reset">SiteMap</a>
+                  </p>
+                  <p>
+                    <a href="account.html#reg_form" class="text-reset">Sign-Up</a>
+                  </p>
+                  
+                </div>
+
+                <div class="col-12 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                  <h6 class="text-uppercase fw-bold mb-4"><a href="contact.html">Contacts</a></h6>
+                  <p><i class="fas fa-home me-3 text-secondary"></i><a href="https://goo.gl/maps/dmiX5syuDcgjXdgy9" target="_blank"> Sri Lanka</a></p>
+                  <p>
+                    <i class="fas fa-envelope me-3 text-secondary"></i>
+                    <a href="hashan@gamil.com">hashan@gamil.com</a>
+                  </p>
+                  <p><i class="fas fa-phone me-3 text-secondary"></i> + 94 787 18 9456</p>
+                  <p><i class="fas fa-print me-3 text-secondary"></i> + 94 123 45 6789</p>
+                </div>
+              </div>
+            </div>
+            
+          </section>
+
+        </footer>
+      </section>
+
+      <!-- Copyright -->
+      <div class="w-100 text-center p-3 " style="background-color: rgba(0, 0, 0, 0.904);">
+        <span class="text-muted">© 2023 Copyright :  &nbsp;</span>
+        <a class="text-white" href="index.html">ABClearningcenter.com</a>
+      </div>
+
+      
+  </main>
+
+  <script>
+    var nav = document.querySelector('nav');
+
+    window.addEventListener('scroll', function(){
+        if (window.pageYOffset>50){
+            nav.classList.add('bg-dark','shadow');
+            
+        }else{
+            nav.classList.remove('bg-dark','shadow');
+        }
+    })
+
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl);
+      })
+
+      
+      var nav_icon = document.getElementById("nav_icon");
+      var nav_bar = document.getElementById("nav_bar");
+    function goblack() {
+      nav.classList.add('bg-dark','shadow');    
+    }
+    function noblack() {
+      nav.classList.remove('bg-dark','shadow');    
+    }
+    
+  </script>
+  
+</body>
+</html>
